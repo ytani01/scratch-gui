@@ -46,7 +46,53 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import fooImage from './foo/foo.png';
+import fooInsetImage from './foo/foo-small.png';
+
+import foo2Image from './foo2/foo.png';
+import foo2InsetImage from './foo2/foo-small.png';
+
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Foo2 Blocks"
+                description="Foo2 name"
+                id="gui.extension.foo2.name"
+            />
+        ),
+        extensionId: 'foo2',
+        iconURL: foo2Image,
+        insetIconURL: foo2InsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Foo2 description"
+                description="Description for the 'Foo' extension"
+                id="gui.extension.foo2.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Foo Blocks"
+                description="Foo name"
+                id="gui.extension.foo.name"
+            />
+        ),
+        extensionId: 'foo',
+        iconURL: fooImage,
+        insetIconURL: fooInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Foo description"
+                description="Description for the 'Foo' extension"
+                id="gui.extension.foo.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
