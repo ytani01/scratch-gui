@@ -71,7 +71,8 @@ export default [
                 id="gui.extension.foo2.description"
             />
         ),
-        featured: true
+        featured: false,
+        disabled: true
     },
     {
         name: (
@@ -82,6 +83,7 @@ export default [
             />
         ),
         extensionId: 'foo',
+        collaborator: 'collaborator',
         iconURL: fooImage,
         insetIconURL: fooInsetImage,
         description: (
@@ -91,7 +93,14 @@ export default [
                 id="gui.extension.foo.description"
             />
         ),
-        featured: true
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: fooImage,
+        connectionSmallIconURL: fooInsetImage
     },
     {
         name: (
