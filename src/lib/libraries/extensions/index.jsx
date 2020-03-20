@@ -49,30 +49,37 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 import fooImage from './foo/foo.png';
 import fooInsetImage from './foo/foo-small.png';
 
-import foo2Image from './foo2/foo.png';
-import foo2InsetImage from './foo2/foo-small.png';
+import ottopiwsImage from './OttoPiWs/ottopi.png';
+import ottopiwsInsetImage from './OttoPiWs/ottopi-small.png';
 
 export default [
     {
         name: (
             <FormattedMessage
-                defaultMessage="Foo2 Blocks"
-                description="Foo2 name"
-                id="gui.extension.foo2.name"
+                defaultMessage="OttoPi Websock"
+                description="OttoPi Websock name"
+                id="gui.extension.ottopiws.name"
             />
         ),
-        extensionId: 'foo2',
-        iconURL: foo2Image,
-        insetIconURL: foo2InsetImage,
+        extensionId: 'ottopiws',
+        collaborator: 'collaborator',
+        iconURL: ottopiwsImage,
+        insetIconURL: ottopiwsInsetImage,
         description: (
             <FormattedMessage
-                defaultMessage="Foo2 description"
-                description="Description for the 'Foo' extension"
-                id="gui.extension.foo2.description"
+                defaultMessage="OttoPi Websock接続"
+                description="Description for the 'OttoPi Websock' extension"
+                id="gui.extension.ottopiws.description"
             />
         ),
-        featured: false,
-        disabled: true
+        featured: true,
+        disabled: false,
+	bluetoothRequired: false,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: ottopiwsImage,
+        connectionSmallIconURL: ottopiwsInsetImage
     },
     {
         name: (
@@ -97,8 +104,8 @@ export default [
         disabled: false,
         bluetoothRequired: true,
         internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: false,
-        useAutoScan: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: true,
         connectionIconURL: fooImage,
         connectionSmallIconURL: fooInsetImage
     },
