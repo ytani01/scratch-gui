@@ -106,7 +106,7 @@ export default [
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: true,
         useAutoScan: true,
-        connectionIconURL: fooImage,
+        connectionIconURL: fooInsetImage,
         connectionSmallIconURL: fooInsetImage
     },
     {
