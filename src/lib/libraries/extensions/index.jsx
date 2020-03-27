@@ -47,12 +47,13 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 import fooImage from './foo/foo.png';
-import fooInsetImage from './foo/foo-small.png';
+import fooInsetImage from './foo/OttoPi-80x80.png';
 
 import ottopiwsImage from './OttoPiWs/ottopi.png';
 import ottopiwsInsetImage from './OttoPiWs/ottopi-small.png';
 
 export default [
+    /*
     {
         name: (
             <FormattedMessage
@@ -81,6 +82,7 @@ export default [
         connectionIconURL: ottopiwsImage,
         connectionSmallIconURL: ottopiwsInsetImage
     },
+    */
     {
         name: (
             <FormattedMessage
