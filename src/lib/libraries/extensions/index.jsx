@@ -48,6 +48,8 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 import fooImage from './foo/foo.png';
 import fooInsetImage from './foo/OttoPi-80x80.png';
+import fooConnectionIconURL from './foo/OttoPi-80x80.png';
+import fooConnectionSmallIconURL from './foo/OttoPi-40x40.png';
 
 import ottopiwsImage from './OttoPiWs/ottopi.png';
 import ottopiwsInsetImage from './OttoPiWs/ottopi-small.png';
@@ -84,13 +86,7 @@ export default [
     },
     */
     {
-        name: (
-            <FormattedMessage
-                defaultMessage="Foo Blocks"
-                description="Foo name"
-                id="gui.extension.foo.name"
-            />
-        ),
+        name: 'Foo',
         extensionId: 'foo',
         collaborator: 'collaborator',
         iconURL: fooImage,
@@ -107,9 +103,17 @@ export default [
         bluetoothRequired: true,
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: true,
-        useAutoScan: true,
-        connectionIconURL: fooInsetImage,
-        connectionSmallIconURL: fooInsetImage
+        useAutoScan: false,
+        connectionIconURL: fooConnectionIconURL,
+        connectionSmallIconURL: fooConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their robot."
+                id="gui.extension.foo.connectingMessage"
+            />
+        ),
+        helpLink: ''
     },
     {
         name: (
