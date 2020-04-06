@@ -46,10 +46,10 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
-import fooImage from './foo/foo.png';
-import fooInsetImage from './foo/OttoPi-80x80.png';
-import fooConnectionIconURL from './foo/OttoPi-80x80.png';
-import fooConnectionSmallIconURL from './foo/OttoPi-40x40.png';
+import ottopiImage from './ottopi/ottopi.png';
+import ottopiInsetImage from './ottopi/OttoPi-80x80.png';
+import ottopiConnectionIconURL from './ottopi/OttoPi-80x80.png';
+import ottopiConnectionSmallIconURL from './ottopi/OttoPi-40x40.png';
 
 import ottopiwsImage from './OttoPiWs/ottopi.png';
 import ottopiwsInsetImage from './OttoPiWs/ottopi-small.png';
@@ -86,16 +86,16 @@ export default [
     },
     */
     {
-        name: 'Foo',
-        extensionId: 'foo',
+        name: 'OttoPi(オットー・パイ)(仮)',
+        extensionId: 'ottopi',
         collaborator: 'collaborator',
-        iconURL: fooImage,
-        insetIconURL: fooInsetImage,
+        iconURL: ottopiImage,
+        insetIconURL: ottopiInsetImage,
         description: (
             <FormattedMessage
-                defaultMessage="Foo description"
-                description="Description for the 'Foo' extension"
-                id="gui.extension.foo.description"
+                defaultMessage="二足歩行ロボットを動かそう！"
+                description="Description for the 'Ottopi' extension"
+                id="gui.extension.ottopi.description"
             />
         ),
         featured: true,
@@ -104,16 +104,16 @@ export default [
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: true,
         useAutoScan: false,
-        connectionIconURL: fooConnectionIconURL,
-        connectionSmallIconURL: fooConnectionSmallIconURL,
+        connectionIconURL: ottopiConnectionIconURL,
+        connectionSmallIconURL: ottopiConnectionSmallIconURL,
         connectingMessage: (
             <FormattedMessage
                 defaultMessage="Connecting"
                 description="Message to help people connect to their robot."
-                id="gui.extension.foo.connectingMessage"
+                id="gui.extension.ottopi.connectingMessage"
             />
         ),
-        helpLink: ''
+        helpLink: 'https://www.github.com/ytani01/OttoPi/'
     },
     {
         name: (
